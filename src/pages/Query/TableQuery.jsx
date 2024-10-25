@@ -40,7 +40,7 @@ function Row({ row }) {
         <TableCell align="center">{row.date}</TableCell>
         <TableCell align="center">{row.phone}</TableCell>
         <TableCell align="center"> {row.sex === 'm' ? 'Masculino' : row.sex === 'f' ? 'Feminino' : ''}</TableCell>
-       
+        <TableCell align="center">{row.duration}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={7}>
@@ -104,6 +104,7 @@ function TableQuery() {
       <TableCell align="center">Data</TableCell>
       <TableCell align="center">Telefone</TableCell>
       <TableCell align="center">Sexo</TableCell>
+      <TableCell align="center">Duração</TableCell>
     </TableRow>
   </TableHead>
 
